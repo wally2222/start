@@ -1,0 +1,30 @@
+import { StrictMode } from "react";
+import ReactDOM from "react-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+// dep
+// booststrap3.4.1
+// bootstrap3.3.5
+// jquery3.6.0
+
+import App from "./App";
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+  rootElement
+);
+
+styles.css
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  font-size: 16px;
+  color:#fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
