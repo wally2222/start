@@ -1,0 +1,76 @@
+import "./styles.css";
+
+
+
+
+import logo2 from './logo2.png'
+import log3 from './log3.png'
+
+//import logo1 from './logo1.png'
+
+export default function App() {
+  var s1 = {background: "url('./logo1.png')" }
+  return (
+    <div className="App">
+      <header> 
+<nav id="header-nav" className="navbar navbar-default">
+  <div className="container"> 
+ 
+ <div className="navbar-header" style={s1}> 
+    <a href="index.html" className="pull-left visible-md visible-lg">
+      <div id="logo-img" alt="logo image">
+      <img src={logo2} alt=""/>
+     </div>
+    </a>
+    <div className="navbar-brand">
+      <a href="index.html"> <h1> David Chu's China Bistrot</h1></a> 
+    <p> 
+      <img src={log3} alt=""/>
+      <span> Kosher Certified</span>
+     </p>
+    </div>
+    <button type="button" className="navbar-toggle collapsed"
+    data-toggle="collapse" data-target="#collapse-nav" aria-expanded="false"> 
+
+    <span className="sr-only"> Toggle navigation </span>
+    <span className="icon-bar" > </span>
+    <span className="icon-bar"> </span>
+    <span className="icon-bar"> </span>
+    </button>
+ </div>
+<div id="collapsable-nav" className="collapse navbar-collapse"> 
+  <ul id="nav-lis" className="nav navbar-nav pull-right"> 
+    <li>
+      <a href="manu-categories.html"> 
+      <span className="glyphicon glyphicon-cutlery"> </span><br className="hidden-xs"/>Menu</a>
+
+    </li>
+    <li>
+      <a href="#"> <span
+      className="glyphicon glyphicon-info-sign"> </span><br className="hidden-xs"/> About</a>
+
+    </li>
+    <li>
+      <a href="#"> <span
+      className="glyphicon glyphicon-certificate"> </span> <br className="hidden-xs"/>Awards</a>
+
+    </li>
+    <li id="phone" className="hidden-xs">
+      <a href="tel:410-602-5008"> <span> 410-602-5008</span> <div>* We deliver</div></a>
+
+    </li>
+    
+  </ul>
+
+</div>
+
+
+</div>
+ </nav>
+  </header>
+  
+    </div>
+    
+  );
+}
+
